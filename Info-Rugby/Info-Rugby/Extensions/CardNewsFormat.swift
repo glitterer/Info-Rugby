@@ -17,6 +17,7 @@ struct CardNewsFormat: View {
             Text(ball)
                 .font(.system(size: 20))
                 .fontWeight(.bold)
+                .lineSpacing(3)
                 .padding(.bottom, 1) //line사이 간격
             Text(contents)
                 .font(.system(size: 14))

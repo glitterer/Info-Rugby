@@ -17,6 +17,7 @@ struct RugbyRulesFormat: View {
                 .padding(.bottom, 15)
             Text(contents)
                 .font(.system(size: 14))
+                .lineSpacing(3)
             Divider()
                 .padding(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0))
         }
