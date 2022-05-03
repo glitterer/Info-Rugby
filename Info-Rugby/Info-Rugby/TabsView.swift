@@ -13,15 +13,15 @@ struct TabsView: View {
         TabView {
             WhatIsRugby()
                 .tabItem {
-                    Image(systemName: "book.fill")
-                    Text("Terminology")
-                }
-            WhatIsRugby()
-                .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
-            TagTouchView()
+            Terminology()
+                .tabItem {
+                    Image(systemName: "book.fill")
+                    Text("Terminology")
+                }
+            Info()
                 .tabItem {
                     Image(systemName: "info.circle.fill")
                     Text("Info")

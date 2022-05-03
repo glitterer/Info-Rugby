@@ -24,6 +24,8 @@
 		590E67072821965300465CC7 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E67062821965300465CC7 /* GeneralView.swift */; };
 		590E67092821966600465CC7 /* TagTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E67082821966600465CC7 /* TagTouchView.swift */; };
 		590E67102821A49200465CC7 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E670F2821A49200465CC7 /* TabsView.swift */; };
+		590E67132821A6FF00465CC7 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E67122821A6FF00465CC7 /* Info.swift */; };
+		590E67172821A75000465CC7 /* Terminology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E67162821A75000465CC7 /* Terminology.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		590E67062821965300465CC7 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
 		590E67082821966600465CC7 /* TagTouchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTouchView.swift; sourceTree = "<group>"; };
 		590E670F2821A49200465CC7 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		590E67122821A6FF00465CC7 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		590E67162821A75000465CC7 /* Terminology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminology.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,9 @@
 			children = (
 				590E66DB2820AD3D00465CC7 /* Info_RugbyApp.swift */,
 				590E670F2821A49200465CC7 /* TabsView.swift */,
-				590E67112821A4F300465CC7 /* WhatIsRugby */,
+				590E67152821A72B00465CC7 /* Terminology */,
+				590E67142821A70700465CC7 /* Info */,
+				590E67112821A4F300465CC7 /* Home */,
 				590E670328218A6B00465CC7 /* ViewModels */,
 				590E6702282182DA00465CC7 /* HomeScreen */,
 				590E6701282182A000465CC7 /* Tag&Touch */,
@@ -136,14 +142,30 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		590E67112821A4F300465CC7 /* WhatIsRugby */ = {
+		590E67112821A4F300465CC7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				590E66DD2820AD3D00465CC7 /* WhatIsRugby.swift */,
 				590E67062821965300465CC7 /* GeneralView.swift */,
 				590E67082821966600465CC7 /* TagTouchView.swift */,
 			);
-			path = WhatIsRugby;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		590E67142821A70700465CC7 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				590E67122821A6FF00465CC7 /* Info.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		590E67152821A72B00465CC7 /* Terminology */ = {
+			isa = PBXGroup;
+			children = (
+				590E67162821A75000465CC7 /* Terminology.swift */,
+			);
+			path = Terminology;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				590E67132821A6FF00465CC7 /* Info.swift in Sources */,
 				590E66F62820DDA400465CC7 /* CardNewsFormat.swift in Sources */,
 				590E66F02820C7AD00465CC7 /* TagAndTouch.swift in Sources */,
 				590E66EA2820ADBD00465CC7 /* RugbyScore.swift in Sources */,
@@ -228,6 +251,7 @@
 				590E670028217EFC00465CC7 /* TagTouchScore.swift in Sources */,
 				590E66EC2820B1C800465CC7 /* RugbyLeagueUnion.swift in Sources */,
 				590E66DC2820AD3D00465CC7 /* Info_RugbyApp.swift in Sources */,
+				590E67172821A75000465CC7 /* Terminology.swift in Sources */,
 				590E66F828216F1700465CC7 /* RugbyRules.swift in Sources */,
 				590E670528218A8600465CC7 /* FilterViewModel.swift in Sources */,
 				590E66FB2821705C00465CC7 /* RugbyRulesFormat.swift in Sources */,
