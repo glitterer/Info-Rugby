@@ -11,7 +11,7 @@ import SwiftUI
 struct Info_RugbyApp: App {
     var body: some Scene {
         WindowGroup {
-            RugbyRules()
+            WhatIsRugby()
         }
     }
 }

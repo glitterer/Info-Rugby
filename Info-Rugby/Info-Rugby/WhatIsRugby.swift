@@ -7,22 +7,70 @@
 
 import SwiftUI
 
-struct WhatIsRugby: View {
-    var body: some View {
-        NavigationView {
-            VStack{
-                NavigationLink(destination: RugbyScore()) {
-                    Text("점수")
-                }
-                NavigationLink(destination: TagAndTouch()) {
-                    Text("리그vs유니온")
-                }
-            }
-            .buttonStyle(PlainButtonStyle())
-            .navigationBarTitle("Rugby")
+extension WhatIsRugby{
+    var HeaderView: some View{
+        HStack{
+            Text("Rugby")
+                .font(.title)
+                .fontWeight(.bold)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 15, trailing: 0))
+            Spacer()
         }
     }
+    
+    var FilterBar: some View{
+        HStack{
+            ForEach(FilterViewModel.allCases, id: \.rawValue){ item in
+                VStack{
+                    Text(item.title)
+                        .font(.subheadline)
+                        .fontWeight(selectedFilter == item ? .semibold : .regular)
+                        .foregroundColor(selectedFilter == item ? .black : .gray)
+                    if selectedFilter == item{
+                        Capsule()
+                            .foregroundColor(Color(.black))
+                            .frame(height: 3)
+                            .matchedGeometryEffect(id: "filter", in: animation)
+                    } else {
+                        Capsule()
+                            .foregroundColor(Color(.clear))
+                            .frame(height: 3)
+                    }
+                }
+                .onTapGesture{
+                    withAnimation(.easeInOut){
+                        self.selectedFilter = item
+                    }
+                }
+            }
+        }
+        .overlay(Divider().offset(x: 0, y: 16))
+    }
+    
 }
+
+struct WhatIsRugby: View {
+    @State private var selectedFilter: FilterViewModel = .general
+    @Namespace var animation
+    var body: some View {
+        VStack(alignment: .leading){
+            HeaderView
+            
+            FilterBar
+            
+            // 여기서 뷰 전환
+            switch selectedFilter {
+            case .general:
+                GeneralView()
+            case .tagtouch:
+                TagTouchView()
+            }
+            Spacer()
+        }
+        .frame(maxWidth: 358, maxHeight: .infinity)
+    }
+}
+
 
 struct WhatIsRugby_Previews: PreviewProvider {
     static var previews: some View {
