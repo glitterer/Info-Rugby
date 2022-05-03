@@ -46,7 +46,6 @@ extension WhatIsRugby{
         }
         .overlay(Divider().offset(x: 0, y: 16))
     }
-    
 }
 
 struct WhatIsRugby: View {
@@ -65,10 +64,12 @@ struct WhatIsRugby: View {
             case .tagtouch:
                 TagTouchView()
             }
+            
             Spacer()
-        }
+        }       
         .frame(maxWidth: 358, maxHeight: .infinity)
     }
+    
 }
 
 
