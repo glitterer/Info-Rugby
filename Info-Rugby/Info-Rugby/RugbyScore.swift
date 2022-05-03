@@ -42,6 +42,7 @@ struct RugbyScore: View {
                         Text("Try로 득점 이후, 공을 차서 상대 골포스트 사이에 넣는 것을 의미\n한다")
                             .font(.system(size: 14))
                             .lineSpacing(3)
+                            .frame(width: 358, height: .infinity, alignment: .leading)
                     }
                     
                     Divider()

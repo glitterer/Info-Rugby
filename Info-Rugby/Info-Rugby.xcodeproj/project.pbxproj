@@ -15,6 +15,9 @@
 		590E66EC2820B1C800465CC7 /* RugbyLeagueUnion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E66EB2820B1C800465CC7 /* RugbyLeagueUnion.swift */; };
 		590E66EE2820BF9F00465CC7 /* RugbyVSAmericanFootball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E66ED2820BF9F00465CC7 /* RugbyVSAmericanFootball.swift */; };
 		590E66F02820C7AD00465CC7 /* TagAndTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E66EF2820C7AD00465CC7 /* TagAndTouch.swift */; };
+		590E66F62820DDA400465CC7 /* CardNewsFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E66F52820DDA400465CC7 /* CardNewsFormat.swift */; };
+		590E66F828216F1700465CC7 /* RugbyRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E66F728216F1700465CC7 /* RugbyRules.swift */; };
+		590E66FB2821705C00465CC7 /* RugbyRulesFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E66FA2821705C00465CC7 /* RugbyRulesFormat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		590E66EB2820B1C800465CC7 /* RugbyLeagueUnion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RugbyLeagueUnion.swift; sourceTree = "<group>"; };
 		590E66ED2820BF9F00465CC7 /* RugbyVSAmericanFootball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RugbyVSAmericanFootball.swift; sourceTree = "<group>"; };
 		590E66EF2820C7AD00465CC7 /* TagAndTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagAndTouch.swift; sourceTree = "<group>"; };
+		590E66F52820DDA400465CC7 /* CardNewsFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNewsFormat.swift; sourceTree = "<group>"; };
+		590E66F728216F1700465CC7 /* RugbyRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RugbyRules.swift; sourceTree = "<group>"; };
+		590E66FA2821705C00465CC7 /* RugbyRulesFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RugbyRulesFormat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +71,9 @@
 				590E66EB2820B1C800465CC7 /* RugbyLeagueUnion.swift */,
 				590E66ED2820BF9F00465CC7 /* RugbyVSAmericanFootball.swift */,
 				590E66EF2820C7AD00465CC7 /* TagAndTouch.swift */,
+				590E66F728216F1700465CC7 /* RugbyRules.swift */,
 				590E66DF2820AD3E00465CC7 /* Assets.xcassets */,
+				590E66F928216FC800465CC7 /* Extensions */,
 				590E66E12820AD3E00465CC7 /* Preview Content */,
 			);
 			path = "Info-Rugby";
@@ -77,6 +85,15 @@
 				590E66E22820AD3E00465CC7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		590E66F928216FC800465CC7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				590E66F52820DDA400465CC7 /* CardNewsFormat.swift */,
+				590E66FA2821705C00465CC7 /* RugbyRulesFormat.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,12 +166,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				590E66F62820DDA400465CC7 /* CardNewsFormat.swift in Sources */,
 				590E66F02820C7AD00465CC7 /* TagAndTouch.swift in Sources */,
 				590E66EA2820ADBD00465CC7 /* RugbyScore.swift in Sources */,
 				590E66EE2820BF9F00465CC7 /* RugbyVSAmericanFootball.swift in Sources */,
 				590E66DE2820AD3D00465CC7 /* WhatIsRugby.swift in Sources */,
 				590E66EC2820B1C800465CC7 /* RugbyLeagueUnion.swift in Sources */,
 				590E66DC2820AD3D00465CC7 /* Info_RugbyApp.swift in Sources */,
+				590E66F828216F1700465CC7 /* RugbyRules.swift in Sources */,
+				590E66FB2821705C00465CC7 /* RugbyRulesFormat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

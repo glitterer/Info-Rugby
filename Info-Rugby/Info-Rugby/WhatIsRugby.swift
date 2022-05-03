@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  WhatIsRugby.swift
 //  Info-Rugby
 //
 //  Created by Seik Oh on 2022/05/02.
@@ -14,7 +14,7 @@ struct WhatIsRugby: View {
                 NavigationLink(destination: RugbyScore()) {
                     Text("점수")
                 }
-                NavigationLink(destination: RugbyLeagueUnion()) {
+                NavigationLink(destination: TagAndTouch()) {
                     Text("리그vs유니온")
                 }
             }
