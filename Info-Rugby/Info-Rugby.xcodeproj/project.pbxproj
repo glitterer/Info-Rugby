@@ -12,6 +12,7 @@
 		590E66E02820AD3E00465CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590E66DF2820AD3E00465CC7 /* Assets.xcassets */; };
 		590E66E32820AD3E00465CC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590E66E22820AD3E00465CC7 /* Preview Assets.xcassets */; };
 		590E66EA2820ADBD00465CC7 /* RugbyScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E66E92820ADBD00465CC7 /* RugbyScore.swift */; };
+		590E66EC2820B1C800465CC7 /* RugbyLeagueUnion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E66EB2820B1C800465CC7 /* RugbyLeagueUnion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		590E66DF2820AD3E00465CC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		590E66E22820AD3E00465CC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		590E66E92820ADBD00465CC7 /* RugbyScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RugbyScore.swift; sourceTree = "<group>"; };
+		590E66EB2820B1C800465CC7 /* RugbyLeagueUnion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RugbyLeagueUnion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				590E66DB2820AD3D00465CC7 /* Info_RugbyApp.swift */,
 				590E66DD2820AD3D00465CC7 /* WhatIsRugby.swift */,
 				590E66E92820ADBD00465CC7 /* RugbyScore.swift */,
+				590E66EB2820B1C800465CC7 /* RugbyLeagueUnion.swift */,
 				590E66DF2820AD3E00465CC7 /* Assets.xcassets */,
 				590E66E12820AD3E00465CC7 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				590E66EA2820ADBD00465CC7 /* RugbyScore.swift in Sources */,
 				590E66DE2820AD3D00465CC7 /* WhatIsRugby.swift in Sources */,
+				590E66EC2820B1C800465CC7 /* RugbyLeagueUnion.swift in Sources */,
 				590E66DC2820AD3D00465CC7 /* Info_RugbyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

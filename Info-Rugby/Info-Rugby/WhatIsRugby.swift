@@ -10,8 +10,13 @@ import SwiftUI
 struct WhatIsRugby: View {
     var body: some View {
         NavigationView {
-            NavigationLink(destination: RugbyScore()) {
-                Text("play")
+            VStack{
+                NavigationLink(destination: RugbyScore()) {
+                    Text("점수")
+                }
+                NavigationLink(destination: RugbyLeagueUnion()) {
+                    Text("리그vs유니온")
+                }
             }
             .buttonStyle(PlainButtonStyle())
             .navigationBarTitle("Rugby")
