@@ -26,6 +26,7 @@
 		590E67102821A49200465CC7 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E670F2821A49200465CC7 /* TabsView.swift */; };
 		590E67132821A6FF00465CC7 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E67122821A6FF00465CC7 /* Info.swift */; };
 		590E67172821A75000465CC7 /* Terminology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E67162821A75000465CC7 /* Terminology.swift */; };
+		59874002282269400031556D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59874001282269400031556D /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		590E670F2821A49200465CC7 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		590E67122821A6FF00465CC7 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		590E67162821A75000465CC7 /* Terminology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminology.swift; sourceTree = "<group>"; };
+		59874001282269400031556D /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		590E66F928216FC800465CC7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				59874001282269400031556D /* Color+Extension.swift */,
 				590E66F52820DDA400465CC7 /* CardNewsFormat.swift */,
 				590E66FA2821705C00465CC7 /* RugbyRulesFormat.swift */,
 			);
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				590E67132821A6FF00465CC7 /* Info.swift in Sources */,
+				59874002282269400031556D /* Color+Extension.swift in Sources */,
 				590E66F62820DDA400465CC7 /* CardNewsFormat.swift in Sources */,
 				590E66F02820C7AD00465CC7 /* TagAndTouch.swift in Sources */,
 				590E66EA2820ADBD00465CC7 /* RugbyScore.swift in Sources */,

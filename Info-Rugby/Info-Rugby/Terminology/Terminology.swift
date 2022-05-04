@@ -6,15 +6,17 @@
 //
 
 import SwiftUI
-
-//
-//  termdatas.swift
-//  TestCalendar
-//
-//  Created by Christopher Riner on 9/11/20.
-//
-
-import SwiftUI
+extension Terminology{
+    var HeaderView: some View{
+        HStack{
+            Text("Rugby")
+                .font(.title)
+                .fontWeight(.bold)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 15, trailing: 0))
+            Spacer()
+        }
+    }
+}
 
 struct Terms: Comparable, Identifiable {
     static func < (lhs: Terms, rhs: Terms) -> Bool {
@@ -35,6 +37,8 @@ struct Terminology: View {
     
     var body: some View {
         VStack {
+            HeaderView
+                .padding(.leading, 16)
             ScrollViewReader { scrollProxy in
                 ZStack {
                     List {
@@ -52,7 +56,7 @@ struct Terminology: View {
                             }
                         }
                     }
-                    .navigationTitle("termdatas")
+                    //.navigationTitle("termdatas")
                     .listStyle(PlainListStyle())
                     
                     VStack {
