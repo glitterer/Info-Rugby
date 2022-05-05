@@ -127,10 +127,10 @@
 		590E6701282182A000465CC7 /* Tag&Touch */ = {
 			isa = PBXGroup;
 			children = (
-				59874003282275E20031556D /* FourComponents */,
 				590E66FC28217D3000465CC7 /* TagTouchRules.swift */,
 				590E66EF2820C7AD00465CC7 /* TagAndTouch.swift */,
 				590E66FF28217EFC00465CC7 /* TagTouchScore.swift */,
+				59874003282275E20031556D /* FourComponents */,
 			);
 			path = "Tag&Touch";
 			sourceTree = "<group>";
