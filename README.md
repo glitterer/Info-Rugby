@@ -1,3 +1,3 @@
-# Info-Rugby
+# RUGBYIEST
 
-An app that gives information about Rugby in the Korean language.
+This app, "Rugbyiest," gives information about Rugby in Korean.
