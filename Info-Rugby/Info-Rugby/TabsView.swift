@@ -27,6 +27,7 @@ struct TabsView: View {
                     Text("Info")
                 }
         }
+        .overlay(SplashView())
     }
 }
 
