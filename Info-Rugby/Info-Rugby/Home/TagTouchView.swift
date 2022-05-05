@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct TagTouchView: View {
+    @State private var ballSheet = false
+    @State private var tagTouchPlayerSheet = false
+    @State private var uniformSheet = false
+    @State private var fieldSheet = false
+    
     var body: some View {
         ScrollView{
             VStack(alignment: .leading){
@@ -27,33 +32,59 @@ struct TagTouchView: View {
                     .padding(.bottom, 0.5)
                 VStack{
                     HStack{
-                        Image("tagtouch-ball")
-                        Image("tagtouch-players")
-                    }
-                    HStack{
-                        Image("tagtouch-mouthpiece")
-                        Image("tagtouch-field")
+                        Button(action: {
+                            self.ballSheet.toggle()
+                        }){
+                            Image("tagtouch-ball")
+                        }.sheet(isPresented: self.$ballSheet) {
+                            Ball()
+                        }
+                        Button(action: {
+                            tagTouchPlayerSheet.toggle()
+                        }){
+                            Image("tagtouch-players")
+                        }.sheet(isPresented: self.$tagTouchPlayerSheet) {
+                            Playerno()
+                        }
                     }
                 }
-                .padding(.bottom, 24)
-                
-                //3
-                Text("태그/터치 럭비 규칙")
-                    .font(.system(size: 20))
-                    .fontWeight(.bold)
-                    .lineSpacing(3)
-                    .padding(.bottom, 0.5)
-                HStack{
-                    Image("general-rules")
-                    Image("general-score")
-                }
-                .padding(.bottom, 24)
-                
-                Spacer()
             }
+            HStack{
+                Button(action: {
+                    self.uniformSheet.toggle()
+                }){
+                    Image("tagtouch-mouthpiece")
+                }.sheet(isPresented: self.$uniformSheet) {
+                    Uniform()
+                }
+                Button(action: {
+                    fieldSheet.toggle()
+                }){
+                    Image("tagtouch-field")
+                }.sheet(isPresented: self.$fieldSheet) {
+                    Field()
+                }
+            }
+            .padding(.bottom, 24)
+            
+            //3
+            Text("태그/터치 럭비 규칙")
+                .font(.system(size: 20))
+                .fontWeight(.bold)
+                .lineSpacing(3)
+                .padding(.bottom, 0.5)
+            HStack{
+                Image("general-rules")
+                Image("general-score")
+            }
+            .padding(.bottom, 24)
+            
+            Spacer()
         }
     }
 }
+
+
 
 struct TagTouchView_Previews: PreviewProvider {
     static var previews: some View {
