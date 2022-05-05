@@ -16,6 +16,10 @@ extension Color {
         return Color(hex: "#F3F3F3")
     }
     
+    static var logoGreen: Color {
+        return Color(hex: "#156262")
+    }
+    
 }
 
 extension Color {

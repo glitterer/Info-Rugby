@@ -26,6 +26,7 @@
 		590E67102821A49200465CC7 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E670F2821A49200465CC7 /* TabsView.swift */; };
 		590E67132821A6FF00465CC7 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E67122821A6FF00465CC7 /* Info.swift */; };
 		590E67172821A75000465CC7 /* Terminology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E67162821A75000465CC7 /* Terminology.swift */; };
+		59423B6628235E6400F249AE /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59423B6528235E6400F249AE /* SplashView.swift */; };
 		59874002282269400031556D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59874001282269400031556D /* Color+Extension.swift */; };
 		598740052822762D0031556D /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598740042822762D0031556D /* Ball.swift */; };
 		59874007282278480031556D /* Playerno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59874006282278480031556D /* Playerno.swift */; };
@@ -54,6 +55,7 @@
 		590E670F2821A49200465CC7 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		590E67122821A6FF00465CC7 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		590E67162821A75000465CC7 /* Terminology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminology.swift; sourceTree = "<group>"; };
+		59423B6528235E6400F249AE /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		59874001282269400031556D /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		598740042822762D0031556D /* Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
 		59874006282278480031556D /* Playerno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playerno.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				590E66F928216FC800465CC7 /* Extensions */,
 				590E66DF2820AD3E00465CC7 /* Assets.xcassets */,
 				590E66E12820AD3E00465CC7 /* Preview Content */,
+				59423B6528235E6400F249AE /* SplashView.swift */,
 			);
 			path = "Info-Rugby";
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				590E670028217EFC00465CC7 /* TagTouchScore.swift in Sources */,
 				590E66EC2820B1C800465CC7 /* RugbyLeagueUnion.swift in Sources */,
 				590E66DC2820AD3D00465CC7 /* Info_RugbyApp.swift in Sources */,
+				59423B6628235E6400F249AE /* SplashView.swift in Sources */,
 				590E67172821A75000465CC7 /* Terminology.swift in Sources */,
 				590E66F828216F1700465CC7 /* RugbyRules.swift in Sources */,
 				590E670528218A8600465CC7 /* FilterViewModel.swift in Sources */,
