@@ -50,7 +50,6 @@ struct TagTouchView: View {
                         }
                     }
                 }
-            }
             HStack{
                 Button(action: {
                     self.uniformSheet.toggle()
@@ -84,6 +83,7 @@ struct TagTouchView: View {
                 }
             }
             .padding(.bottom, 24)
+            }
             
             Spacer()
         }
