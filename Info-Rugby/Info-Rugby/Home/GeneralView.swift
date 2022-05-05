@@ -16,8 +16,10 @@ struct GeneralView: View {
                     .font(.system(size: 20))
                     .fontWeight(.bold)
                     .padding(.bottom, 0.5)
-                Image("general-difference")
-                    .padding(.bottom, 24)
+                NavigationLink(destination: RugbyVSAmericanFootball()){
+                    Image("general-difference")
+                        .padding(.bottom, 24)
+                }
                 
                 //2
                 Text("올림픽 봐야 돼! 럭비 어떻게 해?")
@@ -26,8 +28,12 @@ struct GeneralView: View {
                     .lineSpacing(3)
                     .padding(.bottom, 0.5)
                 HStack{
-                    Image("general-rules")
-                    Image("general-score")
+                    NavigationLink(destination: RugbyRules()){
+                        Image("general-rules")
+                    }
+                    NavigationLink(destination: RugbyScore()){
+                        Image("general-score")
+                    }
                 }
                 .padding(.bottom, 24)
                 
@@ -36,7 +42,9 @@ struct GeneralView: View {
                     .font(.system(size: 20))
                     .fontWeight(.bold)
                     .padding(.bottom, 0.5)
-                Image("general-Unionvsleague")
+                NavigationLink(destination: RugbyLeagueUnion()){
+                    Image("general-Unionvsleague")
+                }
                 
                 Spacer()
             }

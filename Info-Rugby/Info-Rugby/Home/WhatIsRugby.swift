@@ -52,21 +52,25 @@ struct WhatIsRugby: View {
     @State private var selectedFilter: FilterViewModel = .general
     @Namespace var animation
     var body: some View {
-        VStack(alignment: .leading){
-            HeaderView
-            
-            FilterBar
-            
-            // 여기서 뷰 전환
-            switch selectedFilter {
-            case .general:
-                GeneralView()
-            case .tagtouch:
-                TagTouchView()
-            }
-            
-            Spacer()
-        }       
+        NavigationView{
+            VStack(alignment: .leading){
+                HeaderView
+                VStack{
+                    FilterBar
+                    
+                    // 여기서 뷰 전환
+                    switch selectedFilter {
+                    case .general:
+                        GeneralView()
+                    case .tagtouch:
+                        TagTouchView()
+                    }
+                    
+                    Spacer()
+                }
+            }.navigationBarTitle("", displayMode: .inline)
+                .navigationBarHidden(true)
+        }
         .frame(maxWidth: 358, maxHeight: .infinity)
     }
     

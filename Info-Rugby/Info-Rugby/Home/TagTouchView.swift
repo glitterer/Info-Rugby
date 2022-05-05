@@ -21,11 +21,13 @@ struct TagTouchView: View {
                     .font(.system(size: 20))
                     .fontWeight(.bold)
                     .padding(.bottom, 0.5)
-                Image("tagtouch-difference")
-                    .padding(.bottom, 24)
+                NavigationLink(destination: TagAndTouch()){
+                    Image("tagtouch-difference")
+                        .padding(.bottom, 24)
+                }
                 
                 //2
-                Text("올림픽 봐야 돼! 럭비 어떻게 해?")
+                Text("태그/터치 럭비 준비물")
                     .font(.system(size: 20))
                     .fontWeight(.bold)
                     .lineSpacing(3)
@@ -74,8 +76,12 @@ struct TagTouchView: View {
                 .lineSpacing(3)
                 .padding(.bottom, 0.5)
             HStack{
-                Image("general-rules")
-                Image("general-score")
+                NavigationLink(destination: TagTouchRules()){
+                    Image("general-rules")
+                }
+                NavigationLink(destination: TagTouchScore()){
+                    Image("general-score")
+                }
             }
             .padding(.bottom, 24)
             

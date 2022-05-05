@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RugbyLeagueUnion: View {
     var body: some View {
+        ScrollView{
             ZStack(alignment: .topLeading) {
                 VStack(alignment: .leading){
                     HStack{
@@ -35,7 +36,7 @@ struct RugbyLeagueUnion: View {
                 }
                 .frame(maxWidth: 358, maxHeight: .infinity)
             }
-        
+        }
         .navigationBarTitle("", displayMode: .inline)
     }
 }
