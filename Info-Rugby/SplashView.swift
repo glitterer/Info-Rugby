@@ -23,9 +23,9 @@ struct SplashView: View {
                             .renderingMode(.original)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 250, height: 270)
+                            .frame(width: 250, height: 270  )
                         
-                        Text("Infor Rugby!")
+                        Text("Rugbyiest")
                             .font(.custom("Helvetica", size:40))
                             .fontWeight(.bold)
                             .foregroundColor(Color.black)
