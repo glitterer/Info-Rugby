@@ -1,7 +1,4 @@
 
-<br/>
-<br/>
-
 <div align="center"> 
 
 # Rugbyist
